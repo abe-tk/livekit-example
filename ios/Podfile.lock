@@ -1,4 +1,9 @@
 PODS:
+  - connectivity_plus (0.0.1):
+    - Flutter
+    - ReachabilitySwift
+  - device_info_plus (0.0.1):
+    - Flutter
   - Firebase/CoreOnly (10.20.0):
     - FirebaseCore (= 10.20.0)
   - firebase_core (2.25.4):
@@ -11,16 +16,32 @@ PODS:
   - FirebaseCoreInternal (10.21.0):
     - "GoogleUtilities/NSData+zlib (~> 7.8)"
   - Flutter (1.0.0)
+  - flutter_webrtc (0.9.36):
+    - Flutter
+    - WebRTC-SDK (= 114.5735.08)
   - GoogleUtilities/Environment (7.12.0):
     - PromisesObjC (< 3.0, >= 1.2)
   - GoogleUtilities/Logger (7.12.0):
     - GoogleUtilities/Environment
   - "GoogleUtilities/NSData+zlib (7.12.0)"
+  - livekit_client (2.0.1):
+    - Flutter
+    - WebRTC-SDK (= 114.5735.08)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
   - PromisesObjC (2.3.1)
+  - ReachabilitySwift (5.0.0)
+  - WebRTC-SDK (114.5735.08)
 
 DEPENDENCIES:
+  - connectivity_plus (from `.symlinks/plugins/connectivity_plus/ios`)
+  - device_info_plus (from `.symlinks/plugins/device_info_plus/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - Flutter (from `Flutter`)
+  - flutter_webrtc (from `.symlinks/plugins/flutter_webrtc/ios`)
+  - livekit_client (from `.symlinks/plugins/livekit_client/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
 
 SPEC REPOS:
   trunk:
@@ -29,22 +50,41 @@ SPEC REPOS:
     - FirebaseCoreInternal
     - GoogleUtilities
     - PromisesObjC
+    - ReachabilitySwift
+    - WebRTC-SDK
 
 EXTERNAL SOURCES:
+  connectivity_plus:
+    :path: ".symlinks/plugins/connectivity_plus/ios"
+  device_info_plus:
+    :path: ".symlinks/plugins/device_info_plus/ios"
   firebase_core:
     :path: ".symlinks/plugins/firebase_core/ios"
   Flutter:
     :path: Flutter
+  flutter_webrtc:
+    :path: ".symlinks/plugins/flutter_webrtc/ios"
+  livekit_client:
+    :path: ".symlinks/plugins/livekit_client/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
 
 SPEC CHECKSUMS:
+  connectivity_plus: bf0076dd84a130856aa636df1c71ccaff908fa1d
+  device_info_plus: c6fb39579d0f423935b0c9ce7ee2f44b71b9fce6
   Firebase: 10c8cb12fb7ad2ae0c09ffc86cd9c1ab392a0031
   firebase_core: a46c312d8bae4defa3d009b2aa7b5b413aeb394e
   FirebaseCore: 28045c1560a2600d284b9c45a904fe322dc890b6
   FirebaseCoreInternal: 43c1788eaeee9d1b97caaa751af567ce11010d00
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_webrtc: 55df3aaa802114dad390191a46c2c8d535751268
   GoogleUtilities: 0759d1a57ebb953965c2dfe0ba4c82e95ccc2e34
+  livekit_client: 6ce05b9a2574e4c4f07e30e2904a75f92e064ad2
+  path_provider_foundation: 3784922295ac71e43754bd15e0653ccfd36a147c
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  WebRTC-SDK: c24d2a6c9f571f2ed42297cb8ffba9557093142b
 
-PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
+PODFILE CHECKSUM: f9420bd595da8fbce156b547dcd3368afc5226ff
 
 COCOAPODS: 1.14.2
